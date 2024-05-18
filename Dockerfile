@@ -16,7 +16,7 @@ COPY . .
 
 RUN rm -rf /usr/src/app/node_modules
 
-RUN npm install --platform=linux --arch=arm64v8 sharp
+# RUN npm install --platform=linux --arch=arm64v8 sharp
 
 RUN npm install
 
