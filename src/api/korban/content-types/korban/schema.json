@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "korbans",
+  "info": {
+    "singularName": "korban",
+    "pluralName": "korbans",
+    "displayName": "korban",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "jenis_kelamin": {
+      "type": "string"
+    },
+    "tempat_tanggal_lahir": {
+      "type": "string"
+    },
+    "no_identitas": {
+      "type": "string"
+    },
+    "alamat_ktp": {
+      "type": "richtext"
+    },
+    "meninggal_atau_luka": {
+      "type": "enumeration",
+      "enum": [
+        "Meninggal Dunia",
+        "Luka"
+      ]
+    },
+    "status_terkait_peristiwa": {
+      "type": "enumeration",
+      "enum": [
+        "Korban Langsung"
+      ]
+    }
+  }
+}

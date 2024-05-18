@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "linimasas",
+  "info": {
+    "singularName": "linimasa",
+    "pluralName": "linimasas",
+    "displayName": "linimasa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "narasi_id": {
+      "type": "richtext"
+    },
+    "narasi_en": {
+      "type": "richtext"
+    },
+    "tahun": {
+      "type": "string"
+    },
+    "pelaku": {
+      "type": "string"
+    },
+    "gambar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "afiliasi": {
+      "type": "string"
+    },
+    "jenis_serangan": {
+      "type": "string"
+    }
+  }
+}

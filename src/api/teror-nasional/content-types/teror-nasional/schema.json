@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teror_nasionals",
+  "info": {
+    "singularName": "teror-nasional",
+    "pluralName": "teror-nasionals",
+    "displayName": "teror nasional",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kejadian": {
+      "type": "string"
+    },
+    "tanggal": {
+      "type": "date"
+    },
+    "lokasi": {
+      "type": "text"
+    },
+    "alat": {
+      "type": "richtext"
+    },
+    "organisasi": {
+      "type": "text"
+    },
+    "detail": {
+      "type": "richtext"
+    },
+    "pelaku": {
+      "type": "text"
+    },
+    "video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "gambar": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "afiliasi": {
+      "type": "string"
+    },
+    "pengelompokan_aksi_teror": {
+      "type": "text"
+    },
+    "berita": {
+      "type": "string"
+    }
+  }
+}

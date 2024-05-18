@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teror_internasionals",
+  "info": {
+    "singularName": "teror-internasional",
+    "pluralName": "teror-internasionals",
+    "displayName": "teror internasional",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kejadian": {
+      "type": "string"
+    },
+    "tanggal": {
+      "type": "date"
+    },
+    "lokasi": {
+      "type": "text"
+    },
+    "alat": {
+      "type": "richtext"
+    },
+    "organisasi": {
+      "type": "text"
+    },
+    "detail": {
+      "type": "richtext"
+    },
+    "berita": {
+      "type": "string"
+    },
+    "pelaku": {
+      "type": "text"
+    },
+    "video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "gambar": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "afiliasi": {
+      "type": "string"
+    },
+    "pendana": {
+      "type": "text"
+    }
+  }
+}
