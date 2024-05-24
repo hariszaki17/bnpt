@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "teror_internasionals",
+  "collectionName": "area_bom_balis",
   "info": {
-    "singularName": "teror-internasional",
-    "pluralName": "teror-internasionals",
-    "displayName": "04. Teror Internasional",
+    "singularName": "area-bom-bali",
+    "pluralName": "area-bom-balis",
+    "displayName": "07. Area Bom Bali",
     "description": ""
   },
   "options": {
@@ -12,31 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "kejadian": {
+    "Topic": {
       "type": "string"
     },
-    "tanggal": {
-      "type": "date"
-    },
-    "lokasi": {
-      "type": "text"
-    },
-    "alat": {
+    "narasi_id": {
       "type": "richtext"
     },
-    "organisasi": {
-      "type": "text"
-    },
-    "detail": {
+    "narasi_eng": {
       "type": "richtext"
     },
-    "berita": {
-      "type": "string"
-    },
-    "pelaku": {
-      "type": "text"
-    },
-    "video": {
+    "dokumentasi_gambar": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -47,7 +32,7 @@
         "audios"
       ]
     },
-    "gambar": {
+    "dokumentasi_video": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -57,12 +42,6 @@
         "videos",
         "audios"
       ]
-    },
-    "afiliasi": {
-      "type": "string"
-    },
-    "pendana": {
-      "type": "text"
     }
   }
 }

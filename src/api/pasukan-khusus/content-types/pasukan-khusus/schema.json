@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pasukan_khususes",
+  "info": {
+    "singularName": "pasukan-khusus",
+    "pluralName": "pasukan-khususes",
+    "displayName": "06. Pasukan Khusus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "video_profile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Sejarah_id": {
+      "type": "richtext"
+    },
+    "Fungsi_Tugas": {
+      "type": "richtext"
+    }
+  }
+}

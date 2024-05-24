@@ -4,7 +4,8 @@
   "info": {
     "singularName": "linimasa",
     "pluralName": "linimasas",
-    "displayName": "linimasa"
+    "displayName": "02. Linimasa",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,24 +28,26 @@
       "type": "string"
     },
     "gambar": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "afiliasi": {
       "type": "string"

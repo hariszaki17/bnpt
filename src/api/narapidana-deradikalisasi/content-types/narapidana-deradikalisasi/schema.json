@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "narapidana_deradikalisasis",
+  "info": {
+    "singularName": "narapidana-deradikalisasi",
+    "pluralName": "narapidana-deradikalisasis",
+    "displayName": "09. Narapidana Deradikalisasi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "no_identitas": {
+      "type": "string"
+    },
+    "kasus": {
+      "type": "string"
+    },
+    "hukuman": {
+      "type": "string"
+    },
+    "jenis_kelamin": {
+      "type": "enumeration",
+      "enum": [
+        "Laki-laki",
+        "Perempuan"
+      ]
+    },
+    "umur": {
+      "type": "integer"
+    }
+  }
+}

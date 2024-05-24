@@ -4,7 +4,7 @@
   "info": {
     "singularName": "korban",
     "pluralName": "korbans",
-    "displayName": "korban",
+    "displayName": "08. Korban",
     "description": ""
   },
   "options": {
@@ -39,6 +39,9 @@
       "enum": [
         "Korban Langsung"
       ]
+    },
+    "peristiwa": {
+      "type": "string"
     }
   }
 }

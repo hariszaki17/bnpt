@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "teror_internasionals",
+  "collectionName": "orang_kelompok_yang_berjasas",
   "info": {
-    "singularName": "teror-internasional",
-    "pluralName": "teror-internasionals",
-    "displayName": "04. Teror Internasional",
+    "singularName": "orang-kelompok-yang-berjasa",
+    "pluralName": "orang-kelompok-yang-berjasas",
+    "displayName": "10. Orang/Kelompok yang Berjasa",
     "description": ""
   },
   "options": {
@@ -12,31 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "kejadian": {
+    "nama": {
       "type": "string"
     },
-    "tanggal": {
+    "narasi_id": {
+      "type": "richtext"
+    },
+    "narasi_eng": {
+      "type": "richtext"
+    },
+    "peristiwa": {
+      "type": "string"
+    },
+    "tanggal_kejadian": {
       "type": "date"
     },
-    "lokasi": {
-      "type": "text"
-    },
-    "alat": {
-      "type": "richtext"
-    },
-    "organisasi": {
-      "type": "text"
-    },
-    "detail": {
-      "type": "richtext"
-    },
-    "berita": {
-      "type": "string"
-    },
-    "pelaku": {
-      "type": "text"
-    },
-    "video": {
+    "dokumentasi_gambar": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -47,7 +38,7 @@
         "audios"
       ]
     },
-    "gambar": {
+    "dokumentasi_video": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -58,11 +49,8 @@
         "audios"
       ]
     },
-    "afiliasi": {
-      "type": "string"
-    },
-    "pendana": {
-      "type": "text"
+    "detail_orang_kelompok": {
+      "type": "richtext"
     }
   }
 }

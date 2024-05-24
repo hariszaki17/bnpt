@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_lini_masas",
+  "info": {
+    "singularName": "video-lini-masa",
+    "pluralName": "video-lini-masas",
+    "displayName": "01. Video Lini Masa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    }
+  }
+}

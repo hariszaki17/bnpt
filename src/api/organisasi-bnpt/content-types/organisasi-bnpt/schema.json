@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organisasi_bnpts",
+  "info": {
+    "singularName": "organisasi-bnpt",
+    "pluralName": "organisasi-bnpts",
+    "displayName": "05. Organisasi BNPT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Department": {
+      "type": "string"
+    },
+    "Deputi": {
+      "type": "string"
+    },
+    "desktipsi": {
+      "type": "richtext"
+    }
+  }
+}

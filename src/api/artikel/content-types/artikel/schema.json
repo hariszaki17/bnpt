@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artikels",
+  "info": {
+    "singularName": "artikel",
+    "pluralName": "artikels",
+    "displayName": "99. artikel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "topic": {
+      "type": "string"
+    },
+    "narasi_id": {
+      "type": "richtext"
+    },
+    "narasi_eng": {
+      "type": "richtext"
+    },
+    "dokumentasi_gambar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "dokumentasi_video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
