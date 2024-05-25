@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_dokumentasi_dokumentasi_kegiatans",
+  "info": {
+    "displayName": "dokumentasi_kegiatan",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nama_kegiatan": {
+      "type": "string"
+    },
+    "dokumentasi": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "narasi_kegiatan_id": {
+      "type": "richtext"
+    },
+    "narasi_kegiatan_eng": {
+      "type": "richtext"
+    }
+  }
+}

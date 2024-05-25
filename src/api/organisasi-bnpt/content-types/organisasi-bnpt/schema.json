@@ -12,14 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Department": {
+    "sub_direktorat": {
       "type": "string"
     },
-    "Deputi": {
+    "direktorat": {
       "type": "string"
     },
-    "desktipsi": {
+    "deputi": {
+      "type": "string"
+    },
+    "narasi_id": {
       "type": "richtext"
+    },
+    "narasi_eng": {
+      "type": "richtext"
+    },
+    "dokumentasi_kegiatan": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dokumentasi.dokumentasi-kegiatan"
     }
   }
 }
