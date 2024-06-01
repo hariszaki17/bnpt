@@ -22,6 +22,7 @@ module.exports = createCoreController('api::korban.korban', ({ strapi }) => ({
             alamat_ktp: data.alamat_ktp,
             status_terkait_peristiwa: data.status_terkait_peristiwa,
             meninggal_atau_luka: data.meninggal_atau_luka,
+            peristiwa: data.peristiwa
         }))
         return {
             data: mapped

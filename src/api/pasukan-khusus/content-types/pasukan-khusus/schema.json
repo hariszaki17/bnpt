@@ -26,10 +26,10 @@
         "audios"
       ]
     },
-    "Sejarah_id": {
+    "sejarah_id": {
       "type": "richtext"
     },
-    "Fungsi_Tugas": {
+    "fungsi_tugas": {
       "type": "richtext"
     }
   }

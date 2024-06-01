@@ -49,12 +49,12 @@ module.exports = createCoreController('api::linimasa.linimasa', ({ strapi }) => 
                 for (let j = 0; j < data.video.length; j++) {
                     const dataVideo = data.video[j]
 
-                    const objGambar = {
+                    const objVideo = {
                         id: dataVideo.id,
                         nama: dataVideo.name,
                         url: dataVideo.url
                     }
-                    videoTemp.push(objGambar)
+                    videoTemp.push(objVideo)
                 }
                 obj.video = videoTemp
             }
