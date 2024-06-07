@@ -12,25 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sub_direktorat": {
+    "Deputi": {
       "type": "string"
     },
-    "direktorat": {
+    "Direktorat": {
       "type": "string"
-    },
-    "deputi": {
-      "type": "string"
-    },
-    "narasi_id": {
-      "type": "richtext"
-    },
-    "narasi_eng": {
-      "type": "richtext"
     },
     "dokumentasi_kegiatan": {
       "type": "component",
       "repeatable": true,
       "component": "dokumentasi.dokumentasi-kegiatan"
+    },
+    "Tugas": {
+      "type": "richtext"
+    },
+    "Fungsi": {
+      "type": "richtext"
+    },
+    "Deputi_Terkait": {
+      "type": "richtext"
     }
   }
 }

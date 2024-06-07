@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_dokumentasi_subdirektorats",
+  "info": {
+    "displayName": "Subdirektorat",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Nama_Subdirektorat": {
+      "type": "string"
+    },
+    "Narasi_Dokumentasi": {
+      "type": "richtext"
+    },
+    "Dokumentasi": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

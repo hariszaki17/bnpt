@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deputi_and_subdirektorats",
+  "info": {
+    "singularName": "deputi-and-subdirektorat",
+    "pluralName": "deputi-and-subdirektorats",
+    "displayName": "05.1 Direktorat & Subdirektorat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Deputi": {
+      "type": "string"
+    },
+    "Direktorat": {
+      "type": "string"
+    },
+    "Narasi_Direktorat": {
+      "type": "richtext"
+    },
+    "Subdirektorat": {
+      "displayName": "Subdirektorat",
+      "type": "component",
+      "repeatable": false,
+      "component": "dokumentasi.subdirektorat"
+    }
+  }
+}

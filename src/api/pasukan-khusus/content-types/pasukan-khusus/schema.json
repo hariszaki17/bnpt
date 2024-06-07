@@ -29,7 +29,19 @@
     "sejarah_id": {
       "type": "richtext"
     },
-    "fungsi_tugas": {
+    "Sejarah_Inggris": {
+      "type": "richtext"
+    },
+    "Fungsi_Tugas": {
+      "type": "richtext"
+    },
+    "Fungsi_Tugas_Inggris": {
+      "type": "richtext"
+    },
+    "Operasi": {
+      "type": "richtext"
+    },
+    "Operasi_Inggris": {
       "type": "richtext"
     }
   }
