@@ -21,10 +21,9 @@
     "Narasi_Direktorat": {
       "type": "richtext"
     },
-    "Subdirektorat": {
-      "displayName": "Subdirektorat",
+    "Dokumentasi": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "dokumentasi.subdirektorat"
     }
   }

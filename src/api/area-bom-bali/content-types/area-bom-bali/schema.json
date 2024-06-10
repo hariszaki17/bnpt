@@ -21,27 +21,10 @@
     "narasi_eng": {
       "type": "richtext"
     },
-    "dokumentasi_gambar": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "dokumentasi_video": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "Dokumentasi": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dokumentasi.dokumentasi-kegiatan"
     }
   }
 }

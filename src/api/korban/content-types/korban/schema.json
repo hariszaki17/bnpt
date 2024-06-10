@@ -18,15 +18,6 @@
     "jenis_kelamin": {
       "type": "string"
     },
-    "tempat_tanggal_lahir": {
-      "type": "string"
-    },
-    "no_identitas": {
-      "type": "string"
-    },
-    "alamat_ktp": {
-      "type": "richtext"
-    },
     "meninggal_atau_luka": {
       "type": "enumeration",
       "enum": [
@@ -34,13 +25,10 @@
         "Luka"
       ]
     },
-    "status_terkait_peristiwa": {
-      "type": "enumeration",
-      "enum": [
-        "Korban Langsung"
-      ]
-    },
     "peristiwa": {
+      "type": "string"
+    },
+    "Negara": {
       "type": "string"
     }
   }
