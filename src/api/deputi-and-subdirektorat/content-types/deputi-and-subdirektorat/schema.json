@@ -12,16 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Deputi": {
+    "deputi": {
       "type": "string"
     },
-    "Direktorat": {
+    "direktorat": {
       "type": "string"
     },
-    "Narasi_Direktorat": {
+    "narasi_direktorat": {
       "type": "richtext"
     },
-    "Dokumentasi": {
+    "dokumentasi": {
       "type": "component",
       "repeatable": true,
       "component": "dokumentasi.subdirektorat"

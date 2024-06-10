@@ -6,21 +6,22 @@
   },
   "options": {},
   "attributes": {
-    "Nama_Subdirektorat": {
+    "nama_subdirektorat": {
       "type": "string"
     },
-    "Narasi_Dokumentasi": {
+    "narasi_dokumentasi": {
       "type": "richtext"
     },
-    "Dokumentasi": {
+    "dokumentasi": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
