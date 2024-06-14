@@ -27,28 +27,6 @@
     "tanggal_kejadian": {
       "type": "date"
     },
-    "dokumentasi_gambar": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "dokumentasi_video": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "detail_orang_kelompok": {
       "type": "richtext"
     }

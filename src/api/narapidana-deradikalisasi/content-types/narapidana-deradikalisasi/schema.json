@@ -15,13 +15,7 @@
     "nama": {
       "type": "string"
     },
-    "no_identitas": {
-      "type": "string"
-    },
-    "kasus": {
-      "type": "string"
-    },
-    "hukuman": {
+    "Vonis": {
       "type": "string"
     },
     "jenis_kelamin": {
@@ -31,8 +25,8 @@
         "Perempuan"
       ]
     },
-    "umur": {
-      "type": "integer"
+    "Lembaga_Permasyarakatan": {
+      "type": "string"
     }
   }
 }
