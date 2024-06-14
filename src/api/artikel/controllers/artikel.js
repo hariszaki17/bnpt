@@ -6,7 +6,7 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::artikel.artikel', ({ strapi }) => ({
+module.exports = createCoreController('api::artikel.artikel', ({ strapi,env }) => ({
     async find(ctx) {
         let res = await strapi.entityService.findMany('api::artikel.artikel', {
             populate: '*',
@@ -32,7 +32,7 @@ module.exports = createCoreController('api::artikel.artikel', ({ strapi }) => ({
                     const objGambar = {
                         id: dataGambar.id,
                         nama: dataGambar.name,
-                        url: dataGambar.url
+                        url: process.env.BASE_URL + dataGambar.url
                     }
                     gambarTemp.push(objGambar)
                 }
@@ -47,7 +47,7 @@ module.exports = createCoreController('api::artikel.artikel', ({ strapi }) => ({
                     const objVideo = {
                         id: dataVideo.id,
                         nama: dataVideo.name,
-                        url: dataVideo.url
+                        url: process.env.BASE_URL + dataVideo.url
                     }
                     videoTemp.push(objVideo)
                 }

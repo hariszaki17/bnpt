@@ -6,10 +6,14 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::area-bom-bali.area-bom-bali', ({ strapi }) => ({
+module.exports = createCoreController('api::area-bom-bali.area-bom-bali', ({ strapi, env }) => ({
     async find(ctx) {
         let res = await strapi.entityService.findMany('api::area-bom-bali.area-bom-bali', {
-            populate: '*',
+            populate: {
+                Dokumentasi: {
+                    populate: '*',
+                }
+            },
         });
 
         let resp = [];
@@ -21,40 +25,42 @@ module.exports = createCoreController('api::area-bom-bali.area-bom-bali', ({ str
             const data = res[i]
             const obj = {
                 id: data.id,
-                topic: data.topic,
+                topic: data.Topic,
                 narasi_id: data.narasi_id,
-                narasi_en: data.narasi_en,
+                narasi_eng: data.narasi_eng,
             }
 
-            const gambarTemp = []
-            if (data.dokumentasi_gambar != null) {
-                for (let j = 0; j < data.dokumentasi_gambar.length; j++) {
-                    const dataGambar = data.dokumentasi_gambar[j]
+            const dokumentasi = []
+            if (data.Dokumentasi != null) {
+                for (let j = 0; j < data.Dokumentasi.length; j++) {
+                    const dataDok = data.Dokumentasi[j]
 
-                    const objGambar = {
-                        id: dataGambar.id,
-                        nama: dataGambar.name,
-                        url: dataGambar.url
+                    const objDok = {
+                        id: dataDok.id,
+                        nama_kegiatan: dataDok.nama_kegiatan,
+                        narasi_kegiatan_id: dataDok.narasi_kegiatan_id,
+                        narasi_kegiatan_eng: dataDok.narasi_kegiatan_eng,
                     }
-                    gambarTemp.push(objGambar)
-                }
-                obj.dokumentasi_gambar = gambarTemp
-            }
 
+                    const dokumentasiGambarArray = []
+                    console.log(dataDok.dokumentasi)
+                    if (dataDok.dokumentasi != null) {
+                        for (let k = 0; k < dataDok.dokumentasi.length; k++) {
+                            const dokumentasiGambar = dataDok.dokumentasi[k];
 
-            const videoTemp = []
-            if (data.dokumentasi_video != null) {
-                for (let j = 0; j < data.dokumentasi_video.length; j++) {
-                    const dataVideo = data.dokumentasi_video[j]
-
-                    const objGambar = {
-                        id: dataVideo.id,
-                        nama: dataVideo.name,
-                        url: dataVideo.url
+                            const objGambar = {
+                                id: dokumentasiGambar.id,
+                                nama: dokumentasiGambar.name,
+                                url: process.env.BASE_URL + dokumentasiGambar.url
+                            }
+                            dokumentasiGambarArray.push(objGambar)
+                        }
                     }
-                    videoTemp.push(objGambar)
+                    objDok.dokumentasi = dokumentasiGambarArray
+
+                    dokumentasi.push(objDok)
                 }
-                obj.dokumentasi_video = videoTemp
+                obj.dokumentasi = dokumentasi
             }
 
             resp.push(obj)

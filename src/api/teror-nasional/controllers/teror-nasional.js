@@ -40,7 +40,7 @@ module.exports = createCoreController('api::teror-nasional.teror-nasional', ({ s
                     const objGambar = {
                         id: dataGambar.id,
                         nama: dataGambar.name,
-                        url: dataGambar.url
+                        url: process.env.BASE_URL  + dataGambar.url
                     }
                     gambarTemp.push(objGambar)
                 }
@@ -55,7 +55,7 @@ module.exports = createCoreController('api::teror-nasional.teror-nasional', ({ s
                     const objGambar = {
                         id: dataVideo.id,
                         nama: dataVideo.name,
-                        url: dataVideo.url
+                        url: process.env.BASE_URL  + dataVideo.url
                     }
                     videoTemp.push(objGambar)
                 }

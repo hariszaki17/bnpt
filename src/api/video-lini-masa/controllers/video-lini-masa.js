@@ -27,7 +27,7 @@ module.exports = createCoreController('api::video-lini-masa.video-lini-masa', ({
                 obj.video = {
                     id: data.video.id,
                     nama: data.video.name,
-                    url: data.video.url
+                    url: process.env.BASE_URL  + data.video.url
                 }
             }
 

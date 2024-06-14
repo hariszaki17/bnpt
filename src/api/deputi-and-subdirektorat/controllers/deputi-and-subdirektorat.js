@@ -48,7 +48,7 @@ module.exports = createCoreController('api::deputi-and-subdirektorat.deputi-and-
                             const objGambar = {
                                 id: dataGambar.id,
                                 nama: dataGambar.name,
-                                url: dataGambar.url
+                                url: process.env.BASE_URL + dataGambar.url
                             }
 
                             dokumentasi_gambar.push(objGambar)

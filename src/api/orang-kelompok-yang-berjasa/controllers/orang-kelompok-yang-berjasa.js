@@ -23,11 +23,10 @@ module.exports = createCoreController('api::orang-kelompok-yang-berjasa.orang-ke
                 id: data.id,
                 nama: data.nama,
                 narasi_id: data.narasi_id,
-                narasi_en: data.narasi_en,
+                narasi_eng: data.narasi_eng,
                 peristiwa: data.peristiwa,
                 tanggal_kejadian: data.tanggal_kejadian,
                 detail_orang_kelompok: data.detail_orang_kelompok,
-                jenis_serangan: data.jenis_serangan,
             }
 
             const gambarTemp = []
@@ -38,7 +37,7 @@ module.exports = createCoreController('api::orang-kelompok-yang-berjasa.orang-ke
                     const objGambar = {
                         id: dataGambar.id,
                         nama: dataGambar.name,
-                        url: dataGambar.url
+                        url: process.env.BASE_URL  + dataGambar.url
                     }
                     gambarTemp.push(objGambar)
                 }
@@ -53,7 +52,7 @@ module.exports = createCoreController('api::orang-kelompok-yang-berjasa.orang-ke
                     const objVideo = {
                         id: dataVideo.id,
                         nama: dataVideo.name,
-                        url: dataVideo.url
+                        url: process.env.BASE_URL  + dataVideo.url
                     }
                     videoTemp.push(objVideo)
                 }

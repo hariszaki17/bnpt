@@ -21,11 +21,9 @@ module.exports = createCoreController('api::narapidana-deradikalisasi.narapidana
             const obj = {
                 id: data.id,
                 nama: data.nama,
-                no_identitas: data.no_identitas,
-                kasus: data.kasus,
-                hukuman: data.hukuman,
+                vonis: data.Vonis,
                 jenis_kelamin: data.jenis_kelamin,
-                umur: data.umur,
+                lembaga_permasyarakatan: data.Lembaga_Permasyarakatan,
             }
 
             resp.push(obj)

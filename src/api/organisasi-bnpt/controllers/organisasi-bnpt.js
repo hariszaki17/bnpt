@@ -25,11 +25,11 @@ module.exports = createCoreController('api::organisasi-bnpt.organisasi-bnpt', ({
             const data = res[i]
             const obj = {
                 id: data.id,
-                deputi: data.deputi,
-                sub_direktorat: data.sub_direktorat,
-                direktorat: data.direktorat,
-                narasi_id: data.narasi_id,
-                narasi_eng: data.narasi_eng,
+                deputi: data.Deputi,
+                direktorat: data.Direktorat,
+                tugas: data.Tugas,
+                fungsi: data.Fungsi,
+                deputi_terkait: data.Deputi_Terkait,
             }
 
             const dokumentasi_kegiatan = []
@@ -52,7 +52,7 @@ module.exports = createCoreController('api::organisasi-bnpt.organisasi-bnpt', ({
                             const objGambar = {
                                 id: dataGambar.id,
                                 nama: dataGambar.name,
-                                url: dataGambar.url
+                                url: process.env.BASE_URL  + dataGambar.url
                             }
                             gambar.push(objGambar)
                         }
