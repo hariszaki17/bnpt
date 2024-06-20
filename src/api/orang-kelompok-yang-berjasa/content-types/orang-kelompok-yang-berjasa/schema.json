@@ -15,20 +15,21 @@
     "nama": {
       "type": "string"
     },
-    "narasi_id": {
-      "type": "richtext"
-    },
-    "narasi_eng": {
-      "type": "richtext"
-    },
-    "peristiwa": {
+    "Kejadian": {
       "type": "string"
     },
-    "tanggal_kejadian": {
-      "type": "date"
+    "meninggal_atau_luka": {
+      "type": "string"
     },
-    "detail_orang_kelompok": {
-      "type": "richtext"
+    "Jenis_Kelamin": {
+      "type": "enumeration",
+      "enum": [
+        "Laki-Laki",
+        "Perempuan"
+      ]
+    },
+    "test": {
+      "type": "string"
     }
   }
 }
