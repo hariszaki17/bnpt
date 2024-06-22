@@ -15,21 +15,21 @@
     "nama": {
       "type": "string"
     },
-    "Kejadian": {
+    "Peristiwa": {
       "type": "string"
     },
-    "meninggal_atau_luka": {
-      "type": "string"
-    },
-    "Jenis_Kelamin": {
+    "Meninggal_atau_Luka": {
       "type": "enumeration",
       "enum": [
-        "Laki-Laki",
-        "Perempuan"
+        "Meninggal",
+        "Luka-Luka"
       ]
     },
-    "test": {
+    "Negara": {
       "type": "string"
+    },
+    "Narasi": {
+      "type": "richtext"
     }
   }
 }
