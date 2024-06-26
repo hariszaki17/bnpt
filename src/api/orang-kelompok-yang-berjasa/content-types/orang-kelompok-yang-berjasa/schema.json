@@ -4,8 +4,7 @@
   "info": {
     "singularName": "orang-kelompok-yang-berjasa",
     "pluralName": "orang-kelompok-yang-berjasas",
-    "displayName": "10. Orang/Kelompok yang Berjasa",
-    "description": ""
+    "displayName": "10. Orang/Kelompok yang Berjasa"
   },
   "options": {
     "draftAndPublish": true
@@ -15,10 +14,10 @@
     "nama": {
       "type": "string"
     },
-    "Peristiwa": {
+    "peristiwa": {
       "type": "string"
     },
-    "meninggal_atau_Luka": {
+    "meninggal_atau_luka": {
       "type": "enumeration",
       "enum": [
         "Meninggal",
@@ -26,10 +25,10 @@
         "Tidak Diketahui"
       ]
     },
-    "Negara": {
+    "negara": {
       "type": "string"
     },
-    "Narasi": {
+    "narasi": {
       "type": "richtext"
     }
   }
