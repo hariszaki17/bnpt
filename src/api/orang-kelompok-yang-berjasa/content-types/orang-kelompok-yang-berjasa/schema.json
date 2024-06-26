@@ -18,11 +18,12 @@
     "Peristiwa": {
       "type": "string"
     },
-    "Meninggal_atau_Luka": {
+    "meninggal_atau_Luka": {
       "type": "enumeration",
       "enum": [
         "Meninggal",
-        "Luka-Luka"
+        "Luka-Luka",
+        "Tidak Diketahui"
       ]
     },
     "Negara": {

@@ -22,7 +22,8 @@
       "type": "enumeration",
       "enum": [
         "Meninggal Dunia",
-        "Luka"
+        "Luka",
+        "Tidak Diketahui"
       ]
     },
     "peristiwa": {
