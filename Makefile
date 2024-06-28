@@ -1,7 +1,7 @@
 .PHONY: run
 
 run:
-	docker run --name bnpt-strapi -p 1337:1337 \
+	docker run -d --name bnpt-strapi -p 1337:1337 \
 		-v $(shell pwd)/.tmp:/usr/src/app/.tmp \
 		-v $(shell pwd)/public:/usr/src/app/public \
 		-v $(shell pwd)/src:/usr/src/app/src \
