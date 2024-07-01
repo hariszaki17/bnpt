@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  bnpt-strapi:
+    image: bnpt-strapi
+    container_name: bnpt-strapi
+    ports:
+      - "1337:1337"
+    volumes:
+      - ./.tmp:/usr/src/app/.tmp
+      - ./public:/usr/src/app/public
+      - ./src:/usr/src/app/src
+      - ./node_modules/@strapi:/usr/src/app/node_modules/@strapi
+    restart: unless-stopped

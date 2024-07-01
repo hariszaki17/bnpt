@@ -24,3 +24,6 @@ stop:
 
 docker-build:
 	docker build -t bnpt-strapi .
+
+docker-compose:
+	docker-compose up -d
