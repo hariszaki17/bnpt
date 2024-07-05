@@ -48,6 +48,11 @@
     },
     "jenis_serangan": {
       "type": "string"
+    },
+    "tanggal": {
+      "type": "date",
+      "required": true,
+      "default": "1948-01-01"
     }
   }
 }
