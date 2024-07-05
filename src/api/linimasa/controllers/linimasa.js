@@ -10,6 +10,7 @@ module.exports = createCoreController('api::linimasa.linimasa', ({ strapi }) => 
     async find(ctx) {
         let res = await strapi.entityService.findMany('api::linimasa.linimasa', {
             populate: '*',
+            sort: { tanggal: 'asc' }
         });
 
         let resp = [];
@@ -27,6 +28,7 @@ module.exports = createCoreController('api::linimasa.linimasa', ({ strapi }) => 
                 pelaku: data.pelaku,
                 afiliasi: data.afiliasi,
                 jenis_serangan: data.jenis_serangan,
+                tanggal: data.tanggal,
             }
 
             const gambarTemp = []
