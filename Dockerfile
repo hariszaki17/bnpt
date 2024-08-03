@@ -29,4 +29,4 @@ CMD ["npm", "run", "build"]
 EXPOSE 1337
 
 # Start Strapi when the container starts
-CMD ["npm", "run", "develop"]
+CMD ["npm", "run", "start"]
