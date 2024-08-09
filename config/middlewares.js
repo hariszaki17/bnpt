@@ -2,6 +2,16 @@ module.exports = [
   'strapi::errors',
   // 'strapi::cors',
   {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        directives: {
+          'connect-src': ["'self'", 'https:', 'http://localhost:1337'], // Add your URL here
+        },
+      },
+    },
+  },
+  {
     name: 'strapi::cors',
     config: {
       enable: true,
@@ -9,7 +19,7 @@ module.exports = [
       headers: ['*'], //allow all headers
     }
   },
-  'strapi::security',
+  // 'strapi::security',
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
