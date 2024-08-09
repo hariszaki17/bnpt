@@ -6,7 +6,7 @@ module.exports = [
     config: {
       contentSecurityPolicy: {
         directives: {
-          'connect-src': ["'self'", 'https:', 'http://localhost:1337'], // Add your URL here
+          'connect-src': ["'self'", 'https:', 'http://cms.mnpti.com:1337'], // Add your URL here
         },
       },
     },
